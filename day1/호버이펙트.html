@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이펙트2</title>
+    <style>
+        body {
+            background: #00002e;
+        }
+
+        ul {
+            display: flex;
+            margin: 50px 0;
+        }
+
+        ul > li {
+            list-style: none;
+            margin: 16px 0;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 24px;
+            padding: 16px 100px;
+            color: #fff;
+            border: 1px solid transparent;
+            position: relative;
+        }
+
+        .btn::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            background-color: #c2c2ff;
+            height: 1px;
+            transition: 0.4s;
+        }
+
+        .btn:hover::before {
+            width: 100%;
+        }
+
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0%;
+            background-color: #c2c2ff;
+            height: 1px;
+            transition: 0.4s;
+        }
+
+        .btn:hover::after {
+            width: 100%;
+        }
+
+        .btn:hover {
+            border-left: 1px solid #c2c2ff;
+            border-right: 1px solid #c2c2ff;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#" class="btn">About</a>
+        </li>
+        <li>
+            <a href="#" class="btn">Contect</a>
+        </li>
+        <li>
+            <a href="#" class="btn">Mail</a>
+        </li>
+    </ul>
+</body>
+</html>
