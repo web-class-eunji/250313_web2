@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation_box {
+            width: 100px;
+            height: 100px;
+            background: turquoise;
+            border-radius: 24px;
+            animation: box_square_rotate 5s ease-in infinite;
+        }
+
+        @keyframes box_square_rotate {
+            20% {
+                transform: translateX(200px);
+            }
+
+            60%{
+                /* transform: translateX(200px);
+                transform: translateY(200px); */
+                transform: translate(200px, 200px);
+            }
+
+            80%{
+                transform: translate(0,200px);
+            }
+
+            100%{
+                transform: translate(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation_box"></div>
+</body>
+</html>
