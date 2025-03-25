@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약 헤더 만들기</title>
+    <script src="https://kit.fontawesome.com/6f1cb9abc0.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            background-image: url(./동아배경.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 1500px;
+        }
+
+        .header_bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* .header_bottom::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            display: block;
+        } */
+
+        .header_top::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            display: block;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 10px;
+        }
+
+        .header_top>nav>ul {
+            justify-content: flex-end;
+        }
+
+        .header_top>nav>ul>li {
+            font-size: 12px;
+            color: black;
+            list-style: none;
+        }
+
+        .header_bottom>nav>ul>li > a,
+        .header_top>nav>ul>li > a {
+           text-decoration: none;
+           color: #000;
+        }
+
+        .end {
+            margin: 5px 10px;
+        }
+
+        .end button {
+            padding: 5px;
+        }
+
+        .end>button,
+        .botton_btn>button {
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+
+        @media (max-width: 1280px) {
+            .top {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (min-width: 360px) and (max-width: 1280px) {
+            .top {
+                flex-wrap: wrap;
+            }
+
+            .header_top {
+                display: none;
+            }
+
+            ul>li {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="top">
+
+        <header>
+            <div class="header_top">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                준법경영
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                판매약국찾기
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                감사제보하기
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header_bottom">
+                <h1>
+                    <img src="./동아로고.svg" alt="동아제약 헤더 로고">
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                회사소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                브랜드
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                R&D
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                정도경영
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                뉴스룸
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                인재채용
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                고객지원
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="end">
+                    <div>
+                        <input type="text" placeholder="검색어입력">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                    </div>
+                    <button>
+                        <i class="fa-solid fa-globe fa-xl"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c20f4000ab.js" crossorigin="anonymous"></script>
+    <title>동아제약</title>
+    <style>
+        /* pc헤더 시작 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url(./동아배경.jpg);
+            height: 100vh;
+            background-size: cover;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .pc_header_top > ul {
+            justify-content: flex-end;
+            font-size: 12px;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #000;
+        }
+
+        .pc_header_top > ul > li {
+            margin-right: 32px;
+        }
+
+        .pc_header_bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid #000;
+        }
+
+        .pc_header_bottom > h1 {
+            background: url(./동아로고.svg);
+            width: 145px;
+            height: 26px;
+            background-size: cover;
+            margin-left: 32px;
+        }
+
+        .pc_header_bottom > nav > ul > li {
+            margin: 0 16px;
+        }
+
+        .pc_header_bottom > nav > ul > li > a{
+            color: #000;
+            text-decoration: none;
+        }
+
+        .header_right_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 16px;
+            border-radius: 50px;
+        }
+
+        .search_box > input {
+            border: none;
+            background: none;
+        }
+
+        .header_right_box {
+            gap: 32px;
+        }
+
+        .header_right_box > figure:last-child {
+            margin-right: 32px;
+        }
+
+        /* pc헤더 끝 */
+
+        /* 모바일헤더 시작 */
+
+        .mo_header {
+            display: none;
+            justify-content: space-between;
+            padding: 16px 0;
+            margin-top: 8px;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #000;
+        }
+
+        .mo_header > h2 {
+            background: url(./동아로고.svg);
+            width: 145px;
+            height: 26px;
+            background-size: cover;
+            margin-left: 32px;
+        }
+
+        .mo_header_right {
+            display: flex;
+        }
+
+        .mo_header_right > figure {
+            margin-right: 16px;
+        }
+
+        /* 모바일 헤더 끝 */
+
+        /* 반응형 시작 */
+
+        @media (max-width: 1200px) {
+            .pc_header_bottom > h1 {
+                background: url(./동아로고.svg);
+                background-size: cover;
+                width: 100px;
+                height: 18px;
+            }
+        }
+
+        @media (max-width: 1090px) {
+            .pc_header_bottom > nav > ul > li {
+                margin: 0 8px;
+            }
+
+            .pc_header_bottom > nav > ul > li > a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 930px){
+            .search_box > input{
+                width: 100px;
+            }
+
+            .search_box {
+                padding: 8px;
+            }
+        }
+
+        @media (max-width:840px){
+            .mo_header {
+                display: flex;
+            }
+
+            .pc_header {
+                display: none;
+            }
+
+            body {
+                background: url(./동아배경.jpg);
+                background-position: 25%;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="pc_header">
+            <div class="pc_header_top">
+                <ul>
+                    <li>준법경영</li>
+                    <li>판매약국찾기</li>
+                    <li>감사제보하기</li>
+                </ul>
+            </div>
+
+            <div class="pc_header_bottom">
+                <h1></h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="#">브랜드</a>
+                        </li>
+                        <li>
+                            <a href="#">R&D</a>
+                        </li>
+                        <li>
+                            <a href="#">정도경영</a>
+                        </li>
+                        <li>
+                            <a href="#">뉴스룸</a>
+                        </li>
+                        <li>
+                            <a href="#">인재채용</a>
+                        </li>
+                        <li>
+                            <a href="#">고객지원</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_right_box">
+                    <div class="search_box">
+                        <input type="text" placeholder="검색어입력">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </div>
+                    <figure>
+                        <i class="fa-solid fa-globe fa-xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="mo_header">
+            <h2></h2>
+            <div class="mo_header_right">
+                <figure>
+                    <i class="fa-solid fa-globe fa-xl"></i>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </figure>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

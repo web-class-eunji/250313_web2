@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약</title>
+    <script src="https://kit.fontawesome.com/e5a50b0b7c.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        header {
+            background-image: url(./172d5e184a9d46b9ae41214da06c8a33.jpg);
+            height: 800px;
+            background-size: cover;
+        }
+
+        aside {
+            display: flex;
+            justify-content: end;
+        }
+
+        aside>p {
+            padding: 16px;
+            font-size: 12px;
+        }
+
+        section {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+        }
+
+        h1 {
+            margin: 0 12px;
+        }
+
+        h1>img {
+            width: 146px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            margin: auto 30px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: end;
+        }
+
+        .icon>.search {
+            border: 1px solid #000;
+            width: 200px;
+            height: 40px;
+            border-radius: 24px;
+            margin: auto 36px;
+            position: relative;
+        }
+
+        .icon>.search>i {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+        }
+
+        .icon>i {
+            margin: auto 36px;
+        }
+
+        .menu,
+        .menu::before,
+        .menu::after {
+            display: block;
+            width: 30px;
+            height: 1px;
+            background-color: #000;
+            margin: 8px;
+        }
+
+        .menu::before,
+        .menu::after {
+            content: "";
+            margin: 8px 0;
+        }
+
+        @media (max-width : 1350px) {
+            li {
+                margin: auto 16px;
+            }
+        }
+        @media (max-width : 1150px) {
+            .icon>.search {
+                margin: auto 16px;
+            }
+        }
+
+        @media (max-width: 1075px) {
+
+            ul,
+            .search {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <aside>
+            <p>준법경영</p>
+            <p>판매약국찾기</p>
+            <p>감사제보하기</p>
+        </aside>
+        <section>
+            <h1><img src="./동아로고.svg" alt=""></h1>
+            <ul>
+                <li>회사소개</li>
+                <li>브랜드</li>
+                <li>R&D</li>
+                <li>정도경영</li>
+                <li>뉴스룸</li>
+                <li>인재채용</li>
+                <li>고객지원</li>
+            </ul>
+            <div class="icon">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <i class="fa-solid fa-globe fa-xl"></i>
+                <div class="menu"></div>
+            </div>
+        </section>
+    </header>
+
+</body>
+
+</html>
