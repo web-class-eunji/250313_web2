@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오톡 헤더</title>
+    <script src="https://kit.fontawesome.com/6f1cb9abc0.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: 'GangwonEdu_OTFBoldA';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Paperlogy-8ExtraBold';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: 'GangwonEdu_OTFBoldA';
+            font-weight: normal;
+            font-style: normal;
+            padding: 0 10px;
+        }
+
+        h1>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .pc_header_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .kakao>li>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .pc_header_top>nav>ul>li>a {
+            text-decoration: none;
+            color: black;
+            margin: 20px;
+        }
+
+        .header_bottom>nav>ul>li>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .header_right_icon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header_bottom {
+            display: flex;
+            justify-content: flex-end;
+            margin: 50px;
+            font-family: 'Paperlogy-8ExtraBold';
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .header_bottom>nav>ul>li>a {
+            padding: 10px;
+        }
+
+        .mo_header {
+            display: none;
+            justify-content: space-between;
+            padding: 16px 0;
+            margin-top: 8px;
+        }
+
+        .mo_header>h2 {
+            font-family: 'GangwonEdu_OTFBoldA';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 30px;
+            width: 160px;
+            height: 30px;
+            margin-left: 20px;
+        }
+
+        .mo_header_right {
+            display: flex;
+        }
+
+        .mo_header_right>figure {
+            margin-right: 16px;
+        }
+
+        @media (min-width: 360px) and (max-width: 1280px) {
+            .header_pc {
+                flex-wrap: wrap;
+            }
+
+            ul>li {
+                display: none;
+            }
+
+            .mo_header {
+                margin: 0;
+            }
+
+            .kakao>li {
+                padding: 10px;
+            }
+        }
+
+        @media(max-width: 1280px) {
+            .header_bottom>nav>ul>li {
+                margin: 0 8px;
+            }
+
+            .header_bottom>nav>ul>li>a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .header_pc {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_pc">
+            <div class="pc_header_top">
+                <h1>
+                    <a href="#">
+                        kakao
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">소개</a>
+                        </li>
+                        <li>
+                            <a href="#">기술과 서비스</a>
+                        </li>
+                        <li>
+                            <a href="#">약속과 책임</a>
+                        </li>
+                        <li>
+                            <a href="#">소식</a>
+                        </li>
+                        <li>
+                            <a href="#">투자정보</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header_right_icon">
+                    <figure>
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-globe fa-xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-regular fa-moon fa-xl"></i>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="header_bottom">
+                <nav>
+                    <div class="kakao">
+                        카카오톡
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">카톡안녕가이드</a>
+                        </li>
+                        <li>
+                            <a href="#">카톡설명서</a>
+                        </li>
+                        <li class="kakao">
+                            <a href="#">다운로드</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="mo_header">
+            <h2>kakao</h2>
+            <div class="mo_header_right">
+                <figure>
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-burger fa-xl"></i>
+                </figure>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

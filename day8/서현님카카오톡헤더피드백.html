@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오톡 헤더</title>
+    <script src="https://kit.fontawesome.com/e5a50b0b7c.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header_top,
+        .header_bottom {
+            display: flex;
+            justify-content: space-between;
+            margin: 32px auto;
+            align-items: center;
+            border-bottom: 1px solid #99999979;
+            padding: 5px;
+        }
+
+        .header_top>nav>ul {
+            display: flex;
+        }
+
+        .header_top>nav>ul>li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        .header_top>nav>ul>li>a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .header_top>.header_right_icon,
+        .header_bottom>.header_right_text,
+        .mo_header_top>.mo_header_right_icon {
+            display: flex;
+        }
+
+        figure,
+        p {
+            padding: 0 16px;
+        }
+
+        p {
+            border-right: 1px solid #99999979;
+        }
+
+        button {
+            padding: 0 8px;
+        }
+
+        .mo_header_top,
+        .mo_header_bottom {
+            display: none;
+            justify-content: space-between;
+            margin: 32px auto;
+            align-items: center;
+            border-bottom: 1px solid #99999979;
+            padding: 5px;
+        }
+
+        @media (max-width: 850px) {
+            .pc_header>.header_top>nav>ul>li>a {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .pc_header {
+                display: none;
+            }
+
+            .mo_header_top,
+            .mo_header_bottom {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .mo_header_top,
+            .mo_header_bottom {
+                margin: 32px 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="pc_header">
+            <div class="header_top">
+                <h1>kakao</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">소개</a>
+                        </li>
+                        <li>
+                            <a href="#">이야기</a>
+                        </li>
+                        <li>
+                            <a href="#">기술과 서비스</a>
+                        </li>
+                        <li>
+                            <a href="#">약속과 책임</a>
+                        </li>
+                        <li>
+                            <a href="#">뉴스</a>
+                        </li>
+                        <li>
+                            <a href="#">투자정보</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_right_icon">
+                    <figure>
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-globe fa-xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </figure>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <h2>카카오톡</h2>
+                <div class="header_right_text">
+                    <p>카톡 안녕가이드</p>
+                    <p>카톡설명서</p>
+                    <button>다운로드</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mo_header">
+            <div class="mo_header_top">
+                <h1>kakao</h1>
+                <div class="mo_header_right_icon">
+                    <figure>
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-burger fa-xl"></i>
+                    </figure>
+                </div>
+            </div>
+            <div class="mo_header_bottom">
+                <h2>카카오톡</h2>
+                <button>다운로드</button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+@media (max-width: 1024px) {
+    .header_top > nav > ul,
+    .header_bottom_li:first-child,
+    .header_bottom_li:nth-child(2){
+        display: none;
+    }
+
+    .header_top {
+        padding: 24px 150px;
+    }
+
+    .header_bottom {
+        padding: 24px 250px;
+    }
+
+    .hidden_icon {
+        display: block;
+    }
+
+    .header_icon_box > figure:nth-child(even){
+        display: none;
+    }
+}

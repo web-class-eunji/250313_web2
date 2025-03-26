@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+body {
+    font-family: 'NanumSquareNeo';
+}
+
+.header_top,
+.header_bottom {
+    border-bottom: 1px solid #ddd;
+    padding: 24px 80px;
+}
+
+.header_top,
+.header_top > nav > ul,
+.header_icon_box,
+.header_bottom,
+.header_bottom_right > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_icon_box > figure,
+.header_top_li,
+.header_bottom_li {
+    padding: 0 16px;
+}
+
+.header_bottom_li:hover > a {
+    text-decoration: underline;
+}
+
+.header_bottom_li {
+    border-right: 1px solid #ddd;
+}
+
+.header_bottom_li {
+    border-right: 5px dashed blue;
+}
+
+.header_bottom_li:last-child {
+    border: none;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    background: none;
+    font-family: 'NanumSquareNeo';
+    font-size: 16px;
+}
+
+.hidden_icon {
+    display: none;
+}
