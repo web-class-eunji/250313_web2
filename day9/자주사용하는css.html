@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주사용하는css</title>
+    <style>
+        .style {
+            /* font속성 */
+            font-size: 사이즈 em, rem, px 등등 다양;
+            font-family: 폰트 종류;
+            font-weight: 폰트 굵기;
+            color: 텍스트 색상;
+            text-align: center start end 문장정렬;
+            text-decoration: none a태그 언더라인 없앨때;
+
+            /* flex속성 */
+            display: flex;
+            /* block요소들의 가로정렬 */
+            justify-content: space-between center flex-end flex-start;
+            /* 가로로 정렬된 block 요소들의 간격정렬 */
+            align-items: center flex-start flex-end;
+            /* 요소의 가로축값을 기준으로 센터 시작 끝 정렬  */
+            flex-direction: column column-reverse;
+            /* flex박스의 중심축을 기본인 가로에서 세로로 변경 */
+            flex-wrap: wrap;
+            /* 요소의 줄바꿈여부 */
+            
+            /* background속성 */
+            background-color: 컬러지정;
+            background: 컬러를 지정해도 되고, url()을 통해 이미지 지정 가능;
+            background-image: url()로 이미지 넣기 가능;
+            background-position: 이미지위치;
+            background-repeat: 이미지반복 기본이 repeat이므로 no-repeat사용해야함;
+            background-size: cover contain 부모박스를 채울 때 이미지 사이즈 조절;
+
+            /* 영역속성 */
+            width: 가로영역 너비;
+            height: 세로영역 높이;
+            max-width: 해당 요소가 가질 수 있는 최대값;
+            min-width: 요소가 가지는 최소값;
+            margin: 콘텐츠 이외의 여백, 요소들끼리 간격을 띄울 때 사용한다;
+            padding: 콘텐츠 영역이며, 보더와 콘텐츠 사이의 간격을 설정한다;
+            border: 1px solid #000 두께, 타입, 색상 설정 가능하다 컨텐츠의 경계선이다;
+            border-radius: 경계선 둥글게;
+
+            /* 위치속성 */
+            position: relative 기준이 되는 요소에 부여;
+            position: absolute 기준에 맞춰 움직일요소에 부여한다 ;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            /* 위치값으로 조절 가능하다. */
+            z-index: position과 함께 사용하며 요소들의 순서를 변경할 수 있다 스케치북 생각하기;
+
+            /* display속성 */
+            display: block;
+            display: inline;
+            display: inline-block;
+            display: flex;
+            display: none none으로 작성하게 되면 브라우저에서 사라진다 없었다가 나타나는 인터랙션에 유용하게 쓰임;
+            
+
+            /* 요소 숨기기 */
+            overflow: hidden 부모영역을 넘어가는 자식 요소를 안 보이게 (가로스크롤바 없앨 때 유용) ;
+            opacity: 투명도;
+
+        
+            /* transform 속성 */
+            transform: translateX() translateY() scale() rotate() skew();
+            
+            /* animation속성 */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            /* name : 애니메이션 이름 */
+            /* duration : 지속시간 */
+            /* timing-function : 지속 속도 */
+            /* delay : 브라우저가 열리고 몇초 뒤에 실행할지 */
+            /* iteration-count : 지속횟수 (인피니트로 작성하면 무한반복) */
+            /* direction : 재생방향 */
+            /* fill-mode : fowards로 설정하면 애니매이션 끝난 상태로 유지 */
+
+            transition: 시간차 설정;
+        }
+    </style>
+</head>
+<body>
+    <div class="style"></div>
+</body>
+</html>

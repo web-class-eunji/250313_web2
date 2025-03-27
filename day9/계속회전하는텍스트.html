@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계속회전하는텍스트</title>
+
+    <style>
+        @font-face {
+            font-family: 'Ownglyph_wiseelist-Rg';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2501-1@1.1/Ownglyph_wiseelist-Rg.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        section {
+            font-family: 'Ownglyph_wiseelist-Rg';
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .animation_text {
+            width: max-content;
+            padding: 24px;
+            font-size: 124px;
+        }
+
+        .roll1 {
+            animation: roll 30s infinite linear;
+        }
+
+        @keyframes roll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes roll2 {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .roll2 {
+            animation: roll2 30s infinite linear;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="animation_text roll1">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto minus ducimus dignissimos possimus
+                quo iure quidem illo ipsa assumenda? Quis explicabo perferendis quaerat ut error velit corrupti maiores
+                laudantium magni?
+            </p>
+        </div>
+        <div class="animation_text roll2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis, architecto similique,
+                voluptatem nihil eum quos totam maxime dolorem veritatis cumque earum assumenda, modi rem pariatur at.
+                Doloremque, non unde!
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
